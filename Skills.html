@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Skills - Aditya's Portfolio</title>
+    <style>
+        .skills-container {
+            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skills-section {
+            background: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .skills-section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        .skill-category {
+            margin-bottom: 2rem;
+        }
+
+        .skill-category h3 {
+            color: var(--text-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .skill-bar {
+            background: rgba(255, 255, 255, 0.1);
+            height: 25px;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+            border-radius: 12px;
+            position: relative;
+            animation: fillBar 1.5s ease-out forwards;
+            transform-origin: left;
+        }
+
+        .skill-name {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-weight: 500;
+            z-index: 1;
+        }
+
+        .skill-percentage {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-weight: 500;
+        }
+
+        .skill-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-item i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+        }
+
+        @keyframes fillBar {
+            from { transform: scaleX(0); }
+            to { transform: scaleX(1); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Aditya</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Skills.html" class="active">Skills</a>
+            <a href="Education.html">Education</a>
+            <a href="Experience.html">Experience</a>
+            <a href="videos.html">Videos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="skills-container section-padding">
+        <div class="skills-section">
+            <h2>Technical Skills</h2>
+            
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%;">
+                        <span class="skill-name">C/C++</span>
+                        <span class="skill-percentage">70%</span>
+                    </div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;">
+                        <span class="skill-name">HTML & CSS</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Specialized Skills</h3>
+                <div class="skill-list">
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>Web Development
+                        <p>Full-stack projects, API integration</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-gamepad"></i>Game Development
+                        <p>Logic-based games, UI/UX design</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-cube"></i>Animation
+                        <p>2D/3D Blender, modeling, rigging</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-shield-alt"></i>Cybersecurity
+                        <p>Ethical hacking, system security</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-section">
+            <h2>Soft Skills</h2>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <i class="fas fa-comments"></i>Communication
+                    <p>Group discussions, public speaking</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-users"></i>Teamwork
+                    <p>Collaborative project management</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-puzzle-piece"></i>Problem Solving
+                    <p>Logical thinking, debugging</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-clock"></i>Time Management
+                    <p>Project planning and execution</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="skills-section">
+            <h2>Creative Skills</h2>
+            <div class="skill-list">
+                <div class="skill-item">
+                    <i class="fas fa-paint-brush"></i>UI/UX Design
+                    <p>Beautiful interfaces, smooth animations</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-gamepad"></i>Game Design
+                    <p>Level design, puzzle creation</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-film"></i>Animation
+                    <p>Character animation, visual storytelling</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-desktop"></i>GUI Development
+                    <p>Interactive applications, Tkinter</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

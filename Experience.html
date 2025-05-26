@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Experience - Aditya's Portfolio</title>
+    <style>
+        .experience-container {
+            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .experience-section {
+            background: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .experience-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-header i {
+            font-size: 2rem;
+            color: var(--primary-color);
+        }
+
+        .experience-header h2 {
+            font-size: 1.8rem;
+            color: var(--text-color);
+        }
+
+        .experience-duration {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            color: var(--light-text);
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tech-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: var(--light-text);
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--light-text);
+        }
+
+        .skill-item i {
+            color: var(--primary-color);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .experience-container {
+                padding: 1rem;
+            }
+
+            .experience-header h2 {
+                font-size: 1.5rem;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Aditya</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Education.html">Education</a>
+            <a href="Experience.html" class="active">Experience</a>
+            <a href="videos.html">Videos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="experience-container section-padding">
+        <div class="experience-section">
+            <div class="experience-header">
+                <i class="fas fa-code"></i>
+                <h2>Coding Experience</h2>
+            </div>
+            <p class="experience-duration">3+ Years of Active Development</p>
+            <p>Advanced programming skills with focus on Python, web development, and application design.</p>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Python to JavaScript Converter</h3>
+                    <p class="project-description">Built a sophisticated code converter using AST module for parsing and transforming Python code to JavaScript.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AST</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Clean Bot 3000</h3>
+                    <p class="project-description">Logic-based grid game featuring levels, math quizzes, and interactive UI elements.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Game Logic</span>
+                        <span class="tech-tag">UI Design</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Memory Matching Game</h3>
+                    <p class="project-description">Browser-based memory game with animations and interactive elements.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-section">
+            <div class="experience-header">
+                <i class="fas fa-film"></i>
+                <h2>Animation Experience</h2>
+            </div>
+            <p class="experience-duration">2+ Years of Creative Work</p>
+            <p>Proficient in 2D and 3D animation using Blender, with focus on modeling and character animation.</p>
+            
+            <div class="skills-list">
+                <div class="skill-item">
+                    <i class="fas fa-cube"></i>
+                    <span>3D Modeling</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-vector-square"></i>
+                    <span>Texturing</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-bone"></i>
+                    <span>Rigging</span>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-video"></i>
+                    <span>Animation Rendering</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience-section">
+            <div class="experience-header">
+                <i class="fas fa-shield-alt"></i>
+                <h2>Cybersecurity Experience</h2>
+            </div>
+            <p class="experience-duration">1+ Year of Security Research</p>
+            <p>Exploring ethical hacking and system security with hands-on projects and tools.</p>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Instagram Account Checker</h3>
+                    <p class="project-description">Developed both terminal and GUI versions for account validation and security checking.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Tkinter</span>
+                        <span class="tech-tag">API Integration</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3 class="project-title">Security Tools</h3>
+                    <p class="project-description">Experience with reconnaissance tools and basic security testing frameworks.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Network Security</span>
+                        <span class="tech-tag">Ethical Hacking</span>
+                        <span class="tech-tag">Security Analysis</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
