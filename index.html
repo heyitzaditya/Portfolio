@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Aditya's Portfolio</title>
+    <style>
+        .home {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: center;
+            padding: 0 10%;
+        }
+
+        .home-img {
+            position: relative;
+            width: 25rem;
+            height: 30rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home-img img {
+            width: 100%;
+            height: 100%;
+            border-radius: 1.5rem;
+            border: .2rem solid var(--primary-color);
+            object-fit: cover;
+        }
+
+        .home-content {
+            flex: 1 1 40rem;
+        }
+
+        .home-content h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .home-content h1 span {
+            color: var(--primary-color);
+        }
+
+        .home-content p {
+            font-size: 1.2rem;
+            margin: 2rem 0 3rem;
+            line-height: 1.6;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 4rem;
+            height: 4rem;
+            background: transparent;
+            border: .2rem solid var(--primary-color);
+            border-radius: 50%;
+            font-size: 2rem;
+            color: var(--primary-color);
+            transition: .5s ease;
+        }
+
+        .social-icons a:hover {
+            background: var(--primary-color);
+            color: var(--background-color);
+            box-shadow: 0 0 1rem var(--primary-color);
+        }
+
+        @media (max-width: 768px) {
+            .home {
+                padding: 0 5%;
+                text-align: center;
+            }
+
+            .home-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .home-img {
+                width: 20rem;
+                height: 24rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Aditya</a>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="Skills.html">Skills</a>
+            <a href="Education.html">Education</a>
+            <a href="Experience.html">Experience</a>
+            <a href="videos.html">Videos</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <section class="home section-padding">
+        <div class="home-img">
+            <img src="main.png" alt="Aditya's Profile Picture">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Aditya</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>A passionate B.Tech student in Computer Science and Engineering with 3+ years of experience in Python programming, web development, and creative technologies. My expertise spans across full-stack development, game design, animation, and cybersecurity. I combine technical skills with creative problem-solving to build engaging digital experiences.</p>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/heyitzaditya" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://t.me/ftd8s/" target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                <a href="https://www.instagram.com/heyitz_aditya/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
